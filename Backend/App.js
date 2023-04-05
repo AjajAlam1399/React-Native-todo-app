@@ -4,15 +4,17 @@ const cookiParser = require("cookie-parser");
 const ErrorMiddleware = require("./middleware/Error");
 const User = require("./Routes/UserRoutes");
 const fileUpload = require("express-fileupload");
-const cors=require('cors');
+const cors = require("cors");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookiParser());
-app.use(fileUpload({
-    limits:{fileSize:50*1024*1024},
-    useTempFiles:true
-}));
+app.use(
+  fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 },
+    useTempFiles: true,
+  })
+);
 app.use(cors());
 // routing
 app.use("/api/v1", User);
