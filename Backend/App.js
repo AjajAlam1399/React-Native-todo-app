@@ -19,6 +19,11 @@ app.use("/api/v1", User);
 
 app.use(ErrorMiddleware);
 
+
+app.get('./',(reqs,resp)=>{
+resp.send("server is working");
+})
+
 module.exports = app;
 
 // "type":"module"  module.export->export default , exports.register->expost const register, const express=require('express') --> import express from 'express'
