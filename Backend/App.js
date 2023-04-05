@@ -20,7 +20,7 @@ app.use("/api/v1", User);
 app.use(ErrorMiddleware);
 
 
-app.get('./',(reqs,resp)=>{
+app.get('/',(reqs,resp)=>{
 resp.send("server is working");
 })
 
