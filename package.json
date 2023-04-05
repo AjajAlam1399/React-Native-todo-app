@@ -5,8 +5,8 @@
   "main": "Backend/Server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Backned/Server.js",
-    "dev": "nodemon Backned/Server.js"
+    "start": "node Backend/Server.js",
+    "dev": "nodemon Backend/Server.js"
   },
   "keywords": [],
   "author": "",
