@@ -19,9 +19,9 @@ app.use("/api/v1", User);
 
 app.use(ErrorMiddleware);
 
-app.get('/',(reqs,resp)=>{
-resp.send("server is working fine");
-})
+// app.get('/',(reqs,resp)=>{
+// resp.send("server is working fine");
+// })
 
 module.exports = app;
 
