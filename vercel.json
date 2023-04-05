@@ -1,6 +1,0 @@
-{
-    "version":2,
-    "name":"react-native-todo-app",
-    "builds":[{"src":"Backend/Server.js","use":"@vercel/node"}],
-    "routes":[{"src":"/(.*)","dest":"/Backend/Server.js"}]
-}
