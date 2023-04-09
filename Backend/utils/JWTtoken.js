@@ -14,7 +14,7 @@ const sendToken = (user, StatusCode, resp) => {
     name: user.name,
     email: user.email,
     avatar: user.avatar,
-    tasks: user.tasks,
+    task: user.task,
   };
   resp.status(StatusCode).cookie("token", token, options).json({
     sucess: true,
