@@ -33,7 +33,9 @@ router.route("/task/new").post(isAuthenticatedUser, addTask);
 
 router
   .route("/task/:taskId")
-  .put(isAuthenticatedUser, removeTask)
+  .delete(isAuthenticatedUser, removeTask)
   .put(isAuthenticatedUser, updateTask);
+
+  
 
 module.exports = router;
