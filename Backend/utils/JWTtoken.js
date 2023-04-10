@@ -15,10 +15,10 @@ const sendToken = (user, StatusCode, resp) => {
     email: user.email,
     avatar: user.avatar,
     task: user.task,
+    varified:user.varified
   };
   resp.status(StatusCode).cookie("token", token, options).json({
     sucess: true,
-    token,
     UserData,
   });
 };
